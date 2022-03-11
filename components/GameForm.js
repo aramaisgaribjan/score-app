@@ -8,7 +8,7 @@ const initialFormData = {
   playerNames: "",
 };
 
-export default function GameForm() {
+export default function GameForm({ onCreateGame }) {
   const [formData, setFormData] = useState(initialFormData);
 
   const disabled = formData.nameOfGame === "" || formData.playerNames === "";
